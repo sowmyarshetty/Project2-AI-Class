@@ -1,4 +1,5 @@
-# Lung Cancer Early Detection: Helping people forcast the likelihood of developing lung cancer
+# Lung Cancer Early Detection: 
+## Helping people forcast the likelihood of developing lung cancer
 
 ### Table of Contents
 
@@ -18,7 +19,14 @@
 
 ![contributors](team-picture.png)
 
-Contributors to the project, pictured from left to right: Cameron Keplinger, Eshumael Manhanzva, Sowmya Shetty, Luther Johnson, Saurabh Pratap Singh, Valarie Miller, and Sunil Khambaita (Advisor).
+Contributors to the project, pictured from left to right:
+1. **Cameron Keplinger**
+2. **Eshumael Manhanzva**
+3. **Sowmya Shetty**
+4. **Luther Johnson**
+5. **Saurabh Pratap Singh**
+4. **Valarie Miller**
+5. **Sunil Khambaita (Advisor)**
 
 ### Executive Summary 
 
@@ -36,10 +44,14 @@ To help people identify their likelihood of developing lung cancer based on a va
 #### 1. **Data Collection & Cleaning**
 
 This dataset offers important insights into lung cancer cases, risk factors, smoking trends, and healthcare access in 25 of the world’s most populated countries. It includes information on 220,632 individuals, detailing their age, gender, smoking history, cancer diagnosis, environmental exposure, and survival rates. This dataset is instrumental for medical research, predictive modeling, and policy-making to understand global lung cancer patterns.
-Data source: https://www.kaggle.com/datasets/ankushpanday1/lung-cancer-risk-and-trends-across-25-countries
+
+#### Data source: https://www.kaggle.com/datasets/ankushpanday1/lung-cancer-risk-and-trends-across-25-countries
 25 of the world’s most populated countries
+
 Environment
+
 Smoking habits
+
 Access to Healthcare
 
 #### 2. **Approach & Methodology**
