@@ -7,9 +7,9 @@
 2. [Executive Summary](#executive-summary)
 3. [Key Points to Consider](#key-points-to-consider)
 4. [Project Objectives](#project-objectives)
-5. [Research Approach](#research-approach)
-6. [Datasets](#datasets)
-7. [Analysis and Conclusion](#analysis-and-conclusion)
+5. [Approach & Methodology](#approach-&-methodology)
+6. [Data Collecting & Cleaning](#data-collecting-&-cleaning)
+7. [Models](#models)
 8. [Next Steps](#next-steps)
 9. [Tools and Libraries](#tools-and-libraries)
 10. [How To Run](#how-to-run)
@@ -20,24 +20,30 @@
 ![contributors](team-picture.png)
 
 Contributors to the project, pictured from left to right:
-1. **Cameron Keplinger**
-2. **Eshumael Manhanzva**
-3. **Sowmya Shetty**
-4. **Luther Johnson**
-5. **Saurabh Pratap Singh**
-4. **Valarie Miller**
-5. **Sunil Khambaita (Advisor)**
+* **Cameron Keplinger**
+* **Eshumael Manhanzva**
+* **Sowmya Shetty**
+* **Luther Johnson**
+* **Saurabh Pratap Singh**
+* **Valarie Miller**
+* **Sunil Khambaita (Advisor)**
 
 ### Executive Summary 
 
-To help people identify their likelihood of developing lung cancer based on a variety of factors including age, environment and health. 
+To help people identify their likelihood of developing lung cancer based on a variety of factors including age, environment and health. This project analyzes a lung cancer dataset using classification, regression, and clustering.
+
+We aim to:
+
+* Predict lung cancer diagnosis using **classification**
+* Predict lung cancer diagnosis using **logistic regression, Decision Tree , RandomForestClassifer**
+* Identify clusters of patients based on risk factors using **K-Means clustering**
 
 ### Key Points to Consider
 
-1. **Age**
-2. **Environment**
-3. **Access to Good Healthcare**
-4. **Smoking Habbits**
+* **Age**
+* **Environment**
+* **Access to Good Healthcare**
+* **Smoking Habbits**
 
 ### Project Objectives
 
@@ -48,50 +54,40 @@ This dataset offers important insights into lung cancer cases, risk factors, smo
 #### Data source: https://www.kaggle.com/datasets/ankushpanday1/lung-cancer-risk-and-trends-across-25-countries
 25 of the world’s most populated countries
 
-Environment
-
-Smoking habits
-
-Access to Healthcare
+* Environment
+* Smoking habits
+* Access to Healthcare
 
 #### 2. **Approach & Methodology**
 
-Our approach will be to utilize the following: 
+Our approach utilizes the following: 
 Clustering: Cluster countries based on lung cancer risk factors using:
-Population, annual lung cancer deaths, lung cancer prevalence, mortality rate, air pollution, exposure, occupational exposure, indoor pollution, access to good healthcare
-Clustering: Cluster according to risk level, of low, medium, high. For example, 
-	Low: young, non-smoker, good healthcare access
-	Medium: (family history, poor environment) 
-	High: older, smoker, poor health care 
+* Population, annual lung cancer deaths, lung cancer prevalence, mortality rate, air pollution, exposure, occupational exposure, indoor pollution, access to good healthcare
+* Clustering: Cluster according to risk level, of low, medium, high. For example, 
+	* Low: young, non-smoker, good healthcare access
+	* Medium: (family history, poor environment) 
+	* High: older, smoker, poor health care 
 
- #### 3. **Models in Use**
+#### Exploratory Data Analysis
+#### Classification: Predicting Lung Cancer Diagnosis
 
-Supervised Learning 
-Classification -  identify car makes and models popularity across cities
-Target variable - vehicle.type
-Feature columns 
-Tools - Classification tools 
-RandomForest
+#### 3. **Models**
 
-Linear Regression - Predict # of times a car make/model will be rented in a given city
-Target Variable - number of renters
-Unsupervised Learning 
-Group vehicles into  clusters based on how frequently they are being rented 
-KMeans - (Clustering)
+#### Classification - Random Forest Classifier Model 
 
-Models to use	
-Random Forest (Decision Tree based model used for  Regression / classification) 
-Decision Tree - (Random Forest/Classification)
+#### Decision Tree Model
+
+#### Clustering: K-Means with Elbow Method
 
 Both Supervised & Unsupervised Learning Methodology
 
-### 4. **Tools & Techniques**
+#### 4. **Tools & Techniques**
 
-Pandas & Pandas Plotting
-Python
-Scikit-learn
-Matplotlib
-Numpy
+* Pandas & Pandas Plotting
+* Python
+* Scikit-learn
+* Matplotlib
+* Numpy
 
 
 
