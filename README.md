@@ -8,18 +8,17 @@
 3. [Key Points to Consider](#key-points-to-consider)
 4. [Project Objectives](#project-objectives)
 5. [Approach & Methodology](#approach-&-methodology)
-6. [Data Collecting & Cleaning](#data-collecting-&-cleaning)
-7. [Models](#models)
-8. [Next Steps](#next-steps)
-9. [Tools and Libraries](#tools-and-libraries)
-10. [How To Run](#how-to-run)
-11. [License](#license)
+6. [Models](#models)
+7. [Tools & Techniques](#tools-&-techniques)
+8. [How To Run](#how-to-run)
+9. [License](#license)
+10. [Next Steps](#next-steps)
 
 ### Contributors
 
 ![contributors](team-picture.png)
 
-Contributors to the project, pictured from left to right:
+Contributors to the project:
 * **Cameron Keplinger**
 * **Eshumael Manhanzva**
 * **Sowmya Shetty**
@@ -32,7 +31,7 @@ Contributors to the project, pictured from left to right:
 
 To help people identify their likelihood of developing lung cancer based on a variety of factors including age, environment and health. This project analyzes a lung cancer dataset using classification, regression, and clustering.
 
-We aim to:
+In this project we succefully completed the following:
 
 * Predict lung cancer diagnosis using **classification**
 * Predict lung cancer diagnosis using **logistic regression, Decision Tree , RandomForestClassifer**
@@ -47,18 +46,19 @@ We aim to:
 
 ### Project Objectives
 
-#### 1. **Data Collection & Cleaning**
+#### Data Collection & Cleaning
 
 This dataset offers important insights into lung cancer cases, risk factors, smoking trends, and healthcare access in 25 of the world’s most populated countries. It includes information on 220,632 individuals, detailing their age, gender, smoking history, cancer diagnosis, environmental exposure, and survival rates. This dataset is instrumental for medical research, predictive modeling, and policy-making to understand global lung cancer patterns.
 
 #### Data source: https://www.kaggle.com/datasets/ankushpanday1/lung-cancer-risk-and-trends-across-25-countries
-25 of the world’s most populated countries
 
-* Environment
-* Smoking habits
-* Access to Healthcare
+* 25 Of The World’s Most Populated Countries
+* 24 Data Columns
+* 220632 Total Records
+* Equal Distribution of Men and Women
+* Ages Range From 22 to 85 Years Old
 
-#### 2. **Approach & Methodology**
+### Approach & Methodology
 
 Our approach utilizes the following: 
 Clustering: Cluster countries based on lung cancer risk factors using:
@@ -71,17 +71,25 @@ Clustering: Cluster countries based on lung cancer risk factors using:
 #### Exploratory Data Analysis
 #### Classification: Predicting Lung Cancer Diagnosis
 
-#### 3. **Models**
+###  Models
 
-#### Classification - Random Forest Classifier Model 
+#### Logistic Regression Model - for Classification
+* Acheived 100% accuraccy with the model
+
+#### Random Forest Classifier Model 
+* Acheived 100% accuraccy with the model
+* Identified Top 10 Most Important Features
 
 #### Decision Tree Model
+* Acheived 100% accuraccy with the model but tree was initially too short
+* Removed the some data sests from dataset to improve the decision tree 
+* Acheived 97.4% accuraccy with the model after revisions
 
-#### Clustering: K-Means with Elbow Method
+#### K-Means with Elbow Method - for Clustering
 
 Both Supervised & Unsupervised Learning Methodology
 
-#### 4. **Tools & Techniques**
+### Tools & Techniques
 
 * Pandas & Pandas Plotting
 * Python
