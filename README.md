@@ -7,9 +7,9 @@
 2. [Executive Summary](#executive-summary)
 3. [Key Points to Consider](#key-points-to-consider)
 4. [Project Objectives](#project-objectives)
-5. [Approach & Methodology](#approach-&-methodology)
+5. [Approach and Methodology](#approach-and-methodology)
 6. [Models](#models)
-7. [Tools & Techniques](#tools-&-techniques)
+7. [Tools and Techniques](#tools-and-techniques)
 8. [How To Run](#how-to-run)
 9. [License](#license)
 10. [Next Steps](#next-steps)
@@ -58,7 +58,7 @@ This dataset offers important insights into lung cancer cases, risk factors, smo
 * Equal Distribution of Men and Women
 * Ages Range From 22 to 85 Years Old
 
-### Approach & Methodology
+### Approach and Methodology
 
 Our approach utilizes the following: 
 Clustering: Cluster countries based on lung cancer risk factors using:
@@ -89,7 +89,7 @@ Clustering: Cluster countries based on lung cancer risk factors using:
 
 Both Supervised & Unsupervised Learning Methodology
 
-### Tools & Techniques
+### Tools and Techniques
 
 * Pandas & Pandas Plotting
 * Python
@@ -97,5 +97,5 @@ Both Supervised & Unsupervised Learning Methodology
 * Matplotlib
 * Numpy
 
-
+### Next Steps
 
