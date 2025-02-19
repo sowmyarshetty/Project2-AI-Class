@@ -69,6 +69,7 @@ Clustering: Cluster countries based on lung cancer risk factors using:
 	* High: older, smoker, poor health care 
 
 #### Exploratory Data Analysis
+![EDA](Exploratory-Data-Analysis.png)
 #### Classification: Predicting Lung Cancer Diagnosis
 
 ###  Models
