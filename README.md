@@ -69,6 +69,10 @@ Clustering: Cluster countries based on lung cancer risk factors using:
 	* High: older, smoker, poor health care 
 
 #### Exploratory Data Analysis
+
+The dataset covers a wide age range (20-85 years) with Uniform Age Spread with Periodic Spikes. The spikes at regular intervals suggest possible grouped data collection.
+
+No significant skewness, implying age alone may not be the primary risk factor.
 ![EDA](Exploratory-Data-Analysis.png)
 #### Classification: Predicting Lung Cancer Diagnosis
 
