@@ -18,13 +18,13 @@
 
 ![contributors](team-picture.png)
 
-Contributors to the project:
-* **Cameron Keplinger**
-* **Eshumael Manhanzva**
-* **Sowmya Shetty**
-* **Luther Johnson**
+Contributors to the project (pictured from left to right):
 * **Saurabh Pratap Singh**
 * **Valarie Miller**
+* **Eshumael Manhanzva**
+* **Cameron Keplinger**
+* **Luther Johnson**
+* **Sowmya Shetty**
 * **Sunil Khambaita (Advisor)**
 
 ### Executive Summary 
@@ -42,7 +42,7 @@ In this project we succefully completed the following:
 * **Age**
 * **Environment**
 * **Access to Good Healthcare**
-* **Smoking Habbits**
+* **Smoking Habits**
 
 ### Project Objectives
 
