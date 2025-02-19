@@ -14,7 +14,7 @@
 
 ### Contributors
 
-![contributors](team-picture.png)
+![contributors](images/team-picture.png)
 
 Contributors to the project (pictured from left to right):
 * **Saurabh Pratap Singh**
