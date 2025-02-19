@@ -10,9 +10,7 @@
 5. [Approach and Methodology](#approach-and-methodology)
 6. [Models](#models)
 7. [Tools and Techniques](#tools-and-techniques)
-8. [How To Run](#how-to-run)
-9. [License](#license)
-10. [Next Steps](#next-steps)
+8. [Next Steps](#next-steps)
 
 ### Contributors
 
@@ -91,7 +89,7 @@ No significant outliers, suggesting lung cancer affects a broad age range.
 #### Feature Correlation
 The correlation heatmap helps identify relationships between numerical features, offering insights into potential predictors for lung cancer.
 
-Strong Positive Correlations:
+**Strong Positive Correlations:**
 
 * Years of Smoking vs. Cigarettes per Day (0.71):
 	* Indicates that longer smoking duration tends to result in a higher number of cigarettes consumed daily.
@@ -137,7 +135,7 @@ The Logistic Regression model has achieved 98% accuracy on the test dataset in t
 * Macro F1 Score is 0.86, Weighted F1 Score is 0.98 The weighted F1 score is higher due to the dominance of Class 0. Macro F1 score is lower, indicating that the model performs better on Class 0 than Class 1.
 
 #### Data Model Optimization - Cross Validation
-The accuracy for each fold is approximately the same and this shows that the model is not overfitting
+A corrective measure for overfitting is data Cross Validation. The accuracy for each fold is approximately the same and this shows that the model is not overfitting
 
 ![Cross-Validation](Cross-Validation.png)
 
@@ -155,7 +153,7 @@ Accuracy Score of the Random Forest Classifier Model is 98% when we dropped only
 
 #### Decision Tree Model
 The Initial Decision Tree Model Accuracy Score : 1.0
-* Exploring Decision Tree Model by removing Adenocarcinoma_Type , Cancer_Stage ,Survival_Years from the training dataset. 
+* Exploring Decision Tree Model by removing "Adenocarcinoma_Type" , "Cancer_Stage" ,"Survival_Years" from the training dataset. 
 
 ![DecisionTree1](Decision-Tree1.png)
 
@@ -166,13 +164,14 @@ The Initial Decision Tree Model Accuracy Score : 1.0
 #### K-Means with Elbow Method - for Clustering
 Finding the Optimal Number of Clusters (K) The "elbow" point is where the rate of inertia reduction slows down significantly.
 * Looking at the plot, the elbow appears at k = 3 or k = 4, meaning:
-* Before this point, adding clusters significantly reduces inertia.
-* After this point, adding more clusters has diminishing returns (minor improvements in cluster quality but increased complexity
+	* Before this point, adding clusters significantly reduces inertia.
+	* After this point, adding more clusters has diminishing returns (minor improvements in cluster quality but increased complexity
   
 ![Elbow](KMean-Elbow.png)
 
 Explanation of K-Means Clustering Visualization:
 This scatter plot represents K-Means Clustering based on Years of Smoking (X-axis) and Cigarettes per Day (Y-axis). The different colors represent different clusters.
+
 ** What the Clusters Represent**
 * Cluster 0 (Dark Purple): Light smokers or new smokers (few years of smoking, fewer cigarettes per day). Includes individuals with low smoking exposure.
 * Cluster 1 (Teal/Blue-Green): Moderate smokers (mid-range years of smoking, medium cigarette consumption). Likely individuals with some smoking-related risks but not extreme.
