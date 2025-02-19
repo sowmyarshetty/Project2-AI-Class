@@ -71,7 +71,7 @@ Clustering: Cluster countries based on lung cancer risk factors using:
 The dataset covers a wide age range (20-85 years) with Uniform Age Spread with Periodic Spikes. The spikes at regular intervals suggest possible grouped data collection.
 No significant skewness, implying age alone may not be the primary risk factor.
 
-![EDA](Exploratory-Data-Analysis.png)
+![EDA](images/Exploratory-Data-Analysis.png)
 
 #### Gender Distribution
 The dataset contains an almost equal number of male and female patients.
