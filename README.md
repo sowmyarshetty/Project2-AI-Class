@@ -77,14 +77,14 @@ No significant skewness, implying age alone may not be the primary risk factor.
 The dataset contains an almost equal number of male and female patients.
 This balanced gender distribution ensures that gender-related insights are unbiased.
 
-![Gender Distribution](Gender-Distribution.png)
+![Gender Distribution](images/Gender-Distribution.png)
 
 #### Age vs Lung Cancer
 The age distribution is similar for both diagnosed and non-diagnosed patients.
 The median age for both groups is around 50-55 years.
 No significant outliers, suggesting lung cancer affects a broad age range.
 
-![AgeVsLungCancer](Age-V-LungCancer-Diagnosis.png)
+![AgeVsLungCancer](images/Age-V-LungCancer-Diagnosis.png)
 
 #### Feature Correlation
 The correlation heatmap helps identify relationships between numerical features, offering insights into potential predictors for lung cancer.
@@ -105,14 +105,14 @@ The correlation heatmap helps identify relationships between numerical features,
 * Key Takeaways for Predictive Modeling:
 	* Strong predictors for mortality and survival include mortality rate, smoking habits, and population size.
  
-![FeatureCorrelation](Feature-Correlation.png)
+![FeatureCorrelation](images/Feature-Correlation.png)
 
 ###  Models
 
 #### Logistic Regression Model - for Classification
 **First Run** - Accuracy Score of the Logistic Regression Model is 100% when we dropped only the 2 columns "Survival_Years","Lung_Cancer_Diagnosis". We removed Survival Years to reduce redundancy between Mortality_Rate
 
-![Logic-Regression1](Logic-Regression1.png)
+![Logic-Regression1](images/Logic-Regression1.png)
 
 The Logistic Regression model has achieved 100% accuracy on the test dataset in the first run when we dropped only 2 columns "Survival_Years" and "Lung_Cancer_Diagnosis". Let's break down the key evaluation metrics:
 * Accuracy = 1.00 (100%) This means that all predictions made by the model were correct.Since the model achieved 1.00, there were no misclassifications.
@@ -124,7 +124,7 @@ The Logistic Regression model has achieved 100% accuracy on the test dataset in 
 
 **Second Run** - Accuracy Score of the Logistic Regression Model is 98% when we dropped the highly co-related columns "Survival_Years","Lung_Cancer_Diagnosis","Mortality_Rate","Adenocarcinoma_Type","Cancer_Stage"
 
-![Logic-Regression2](Logic-Regression2.png)
+![Logic-Regression2](images/Logic-Regression2.png)
 
 The Logistic Regression model has achieved 98% accuracy on the test dataset in the second run when we dropped highly co-related columns "Survival_Years","Lung_Cancer_Diagnosis","Mortality_Rate","Adenocarcinoma_Type","Cancer_Stage"
 * Overall Accuracy is High (98%) The model correctly classifies 98% of all cases. This indicates strong general performance but needs further verification for minority class predictions.
@@ -137,29 +137,29 @@ The Logistic Regression model has achieved 98% accuracy on the test dataset in t
 #### Data Model Optimization - Cross Validation
 A corrective measure for overfitting is data Cross Validation. The accuracy for each fold is approximately the same and this shows that the model is not overfitting
 
-![Cross-Validation](Cross-Validation.png)
+![Cross-Validation](images/Cross-Validation.png)
 
 #### Random Forest Classifier Model 
 Accuracy Score of the Random Forest Classifier Model is 100% when we dropped only the 2 columns "Survival_Years","Lung_Cancer_Diagnosis"
 
-![Random-Forest1](Random-Forest-Classifier1.png)
+![Random-Forest1](images/Random-Forest-Classifier1.png)
 
 Accuracy Score of the Random Forest Classifier Model is 98% when we dropped only the highly co-related columns "Survival_Years","Lung_Cancer_Diagnosis","Mortality_Rate","Adenocarcinoma_Type","Cancer_Stage"
 
-![Random-Forest2](Random-Forest-Classifier2.png)
+![Random-Forest2](images/Random-Forest-Classifier2.png)
 
 #### Top 10 Most Important Characteristics 
-![Top10](Top-Ten-Features.png)
+![Top10](images/Top-Ten-Features.png)
 
 #### Decision Tree Model
 The Initial Decision Tree Model Accuracy Score : 1.0
 * Exploring Decision Tree Model by removing "Adenocarcinoma_Type" , "Cancer_Stage" ,"Survival_Years" from the training dataset. 
 
-![DecisionTree1](Decision-Tree1.png)
+![DecisionTree1](images/Decision-Tree1.png)
 
 * The accuracy score of the improved Decision Tree Model = 0.9744147574047636
 
-![DecisionTree2](Decision-Tree2.png)
+![DecisionTree2](images/Decision-Tree2.png)
 
 #### K-Means with Elbow Method - for Clustering
 Finding the Optimal Number of Clusters (K) The "elbow" point is where the rate of inertia reduction slows down significantly.
@@ -167,7 +167,7 @@ Finding the Optimal Number of Clusters (K) The "elbow" point is where the rate o
 	* Before this point, adding clusters significantly reduces inertia.
 	* After this point, adding more clusters has diminishing returns (minor improvements in cluster quality but increased complexity
   
-![Elbow](KMean-Elbow.png)
+![Elbow](images/KMean-Elbow.png)
 
 Explanation of K-Means Clustering Visualization:
 This scatter plot represents K-Means Clustering based on Years of Smoking (X-axis) and Cigarettes per Day (Y-axis). The different colors represent different clusters.
@@ -177,7 +177,7 @@ This scatter plot represents K-Means Clustering based on Years of Smoking (X-axi
 * Cluster 1 (Teal/Blue-Green): Moderate smokers (mid-range years of smoking, medium cigarette consumption). Likely individuals with some smoking-related risks but not extreme.
 * Cluster 2 (Yellow): Heavy smokers (long history of smoking, high daily cigarette consumption). Likely high-risk individuals for lung cancer and smoking-related diseases.
   
-![Cluster](KMean-Cluster.png)
+![Cluster](images/KMean-Cluster.png)
 
 Most data points fall into Cluster 2 (yellow), indicating a large group of heavy smokers. Cluster 0 (dark purple) is concentrated in the lower-left region, representing beginners or occasional smokers. Cluster 1 (teal) lies in between, showing a transition from light to heavy smoking. The clustering pattern aligns well with known smoking risk categories.
 Interpretation & Impact Health Risk Segmentation:
