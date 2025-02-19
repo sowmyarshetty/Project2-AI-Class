@@ -71,15 +71,49 @@ Clustering: Cluster countries based on lung cancer risk factors using:
 #### Exploratory Data Analysis
 
 The dataset covers a wide age range (20-85 years) with Uniform Age Spread with Periodic Spikes. The spikes at regular intervals suggest possible grouped data collection.
-
 No significant skewness, implying age alone may not be the primary risk factor.
 ![EDA](Exploratory-Data-Analysis.png)
-#### Classification: Predicting Lung Cancer Diagnosis
+
+#### Gender Distribution
+The dataset contains an almost equal number of male and female patients.
+This balanced gender distribution ensures that gender-related insights are unbiased.
+![Gender Distribution](Gender-Distribution.png)
+
+#### Age vs Lung Cancer
+The age distribution is similar for both diagnosed and non-diagnosed patients.
+The median age for both groups is around 50-55 years.
+No significant outliers, suggesting lung cancer affects a broad age range.
+![AgeVsLungCancer](Age-V-LungCancer-Diagnosis.png)
+
+#### Feature Correlation
+The correlation heatmap helps identify relationships between numerical features, offering insights into potential predictors for lung cancer.
+
+Strong Positive Correlations:
+
+* Years of Smoking vs. Cigarettes per Day (0.71):
+	* Indicates that longer smoking duration tends to result in a higher number of cigarettes consumed daily.
+* This suggests that both factors should be considered together when assessing smoking-related lung cancer risk.
+* Population Size vs. Annual Lung Cancer Deaths (0.73):
+	* Larger populations tend to report higher absolute lung cancer deaths. However, this may not reflect an 	increased prevalence rate, just a larger affected population.
+* Survival Years vs. Mortality Rate (0.88):
+	*Higher mortality rates correlate with shorter survival times, which is expected. This supports the 		importance of early detection and better treatment access. Moderate or Weak Correlations:
+* Years of Smoking vs. Survival Years (0.09):
+	* Surprisingly weak correlation suggests that other factors, such as treatment type and genetic 			predisposition, play a significant role in survival.
+* Cigarettes per Day vs. Mortality Rate (0.11):
+	* Weak correlation, indicating that mortality is influenced by multiple factors, not just smoking.
+* Key Takeaways for Predictive Modeling:
+	* Strong predictors for mortality and survival include mortality rate, smoking habits, and population size.
+ 
+![FeatureCorrelation](Feature-Correlation.png)
 
 ###  Models
 
 #### Logistic Regression Model - for Classification
-* Acheived 100% accuraccy with the model
+First Run - Accuracy Score of the Logistic Regression Model is 100% when we dropped only the 2 columns "Survival_Years","Lung_Cancer_Diagnosis". We removed Survival Years to reduce redundancy between Mortality_Rate
+![Logic-Regression1](Logic-Regression1.png)
+
+Second Run - Accuracy Score of the Logistic Regression Model is 98% when we dropped the highly co-related columns "Survival_Years","Lung_Cancer_Diagnosis","Mortality_Rate","Adenocarcinoma_Type","Cancer_Stage"
+![Logic-Regression2](Logic-Regression2.png)
 
 #### Random Forest Classifier Model 
 * Acheived 100% accuraccy with the model
