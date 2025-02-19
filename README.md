@@ -52,7 +52,7 @@ This dataset offers important insights into lung cancer cases, risk factors, smo
 
 #### Data source: https://www.kaggle.com/datasets/ankushpanday1/lung-cancer-risk-and-trends-across-25-countries
 
-* 25 Of The World’s Most Populated Countries
+* 25 of the World’s Most Populated Countries
 * 24 Data Columns
 * 220632 Total Records
 * Equal Distribution of Men and Women
@@ -87,7 +87,7 @@ Clustering: Cluster countries based on lung cancer risk factors using:
 
 #### K-Means with Elbow Method - for Clustering
 
-Both Supervised & Unsupervised Learning Methodology
+*Both Supervised & Unsupervised Learning Methodology
 
 ### Tools and Techniques
 
