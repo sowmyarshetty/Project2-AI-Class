@@ -154,12 +154,12 @@ Accuracy Score of the Random Forest Classifier Model is 98% when we dropped only
 ![Top10](Top-Ten-Features.png)
 
 #### Decision Tree Model
-Decision Tree Model Accuracy Score : 1.0
-Exploring Decision Tree Model by removing Adenocarcinoma_Type , Cancer_Stage ,Survival_Years from the training dataset. 
+The Initial Decision Tree Model Accuracy Score : 1.0
+* Exploring Decision Tree Model by removing Adenocarcinoma_Type , Cancer_Stage ,Survival_Years from the training dataset. 
 
 ![DecisionTree1](Decision-Tree1.png)
 
-The accuracy score of the Decision Tree Model = 0.9744147574047636
+* The accuracy score of the improved Decision Tree Model = 0.9744147574047636
 
 ![DecisionTree2](Decision-Tree2.png)
 
