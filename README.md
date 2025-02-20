@@ -197,7 +197,7 @@ Public health campaigns should focus more on heavy smokers (Cluster 2). Lung can
 * Matplotlib
 * Numpy
 
-### Snapshot of Outcomes
+### snapshot
 ![snapshot](images/SnapShot.png)
 
 ### Next Steps
