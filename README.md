@@ -11,7 +11,7 @@
 6. [Models](#models)
 7. [Tools and Techniques](#tools-and-techniques)
 8. [Snapshot of Outcomes](#snapshot-of-outcomes)
-9. [Next Steps](#next-steps)
+9. [Conclusions and Next Steps](#conclusion-and-next-steps)
 
 ### Contributors
 
@@ -154,8 +154,6 @@ A corrective measure for overfitting is data Cross Validation. Cross validation 
 
 Since we ave an imbalanced dataset (e.g., 96% class 0, 4% class 1), a random split without stratification might result in a test set with too few samples of the minority class. stratify=y ensures both train and test sets have the same class distribution as the original dataset.
 
-![Cross-Validation](images/Cross-Validation.png)
-
 #### Random Forest Classifier Model 
 Accuracy Score of the Random Forest Classifier Model is 100% when we dropped only the 2 columns "Survival_Years","Lung_Cancer_Diagnosis"
 
@@ -216,5 +214,7 @@ Public health campaigns should focus more on heavy smokers (Cluster 2). Lung can
 ### Snapshot of Outcomes
 ![snapshot](images/SnapShot.png)
 
-### Next Steps
+### Conclusion and Next Steps
+With this study we confirm that lung cancer diagnosis can be predicted based on demographic and lifestyle factors to a certain degree. We see that out of the 3 models , the random forest classifer and the decision tree are pretty comparable and strong contenders. These models also suggests that the dataset is well-structured and informative. Additionally, we also did clustering using Kmeans which helped us group patients based on risk levels for better early detection and intervention strategies.
 
+We need more training data for positive lung cancer diagonosis . We can further try different parameters to fine tune the models. Few parameters listed below: class_weight, Hyperparameter Tuning Parameter such as n_estimators,max_depth,min_samples_split, min_samples_leaf, max_features,class_weight,random_state
