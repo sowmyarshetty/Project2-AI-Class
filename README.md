@@ -187,7 +187,7 @@ Finding the Optimal Number of Clusters (K) The "elbow" point is where the rate o
 Explanation of K-Means Clustering Visualization:
 This scatter plot represents K-Means Clustering based on Years of Smoking (X-axis) and Cigarettes per Day (Y-axis). The different colors represent different clusters.
 
-** What the Clusters Represent**
+**What the Clusters Represent**
 * Cluster 0 (Dark Purple): Light smokers or new smokers (few years of smoking, fewer cigarettes per day). Includes individuals with low smoking exposure.
 * Cluster 1 (Teal/Blue-Green): Moderate smokers (mid-range years of smoking, medium cigarette consumption). Likely individuals with some smoking-related risks but not extreme.
 * Cluster 2 (Yellow): Heavy smokers (long history of smoking, high daily cigarette consumption). Likely high-risk individuals for lung cancer and smoking-related diseases.
@@ -195,12 +195,9 @@ This scatter plot represents K-Means Clustering based on Years of Smoking (X-axi
 ![Cluster](images/KMean-Cluster.png)
 
 Most data points fall into Cluster 2 (yellow), indicating a large group of heavy smokers. Cluster 0 (dark purple) is concentrated in the lower-left region, representing beginners or occasional smokers. Cluster 1 (teal) lies in between, showing a transition from light to heavy smoking. The clustering pattern aligns well with known smoking risk categories.
-Interpretation & Impact Health Risk Segmentation:
-* Cluster 2 (heavy smokers) is at high risk and should be the primary target for preventive measures and medical interventions.
-* Cluster 1 (moderate smokers) may still have a chance to reduce their risk with interventions.
-* Cluster 0 (light smokers) represents early-stage smokers who could benefit from quitting programs.
   
 **Policy & Medical Recommendations:**
+
 Public health campaigns should focus more on heavy smokers (Cluster 2). Lung cancer screening programs can prioritize individuals in Clusters 1 & 2.
 
 ### Tools and Techniques
