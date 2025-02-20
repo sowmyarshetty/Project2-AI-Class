@@ -10,7 +10,7 @@
 5. [Approach and Methodology](#approach-and-methodology)
 6. [Models](#models)
 7. [Tools and Techniques](#tools-and-techniques)
-8. [SnapShot of Outcomes](#snapshot-of-outomes)
+8. [SnapShot of Outcomes](#snapshot)
 9. [Next Steps](#next-steps)
 
 ### Contributors
@@ -198,7 +198,7 @@ Public health campaigns should focus more on heavy smokers (Cluster 2). Lung can
 * Numpy
 
 ### Snapshot of Outcomes
-![Snapshot](images/SnapShot.png)
+![snapshot](images/SnapShot.png)
 
 ### Next Steps
 
