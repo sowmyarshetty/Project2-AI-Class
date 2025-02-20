@@ -168,10 +168,18 @@ Accuracy Score of the Random Forest Classifier Model is 98% when we dropped only
 
 #### Decision Tree Model
 The Initial Decision Tree Model Accuracy Score : 1.0
-* Exploring Decision Tree Model by removing "Adenocarcinoma_Type" , "Cancer_Stage" ,"Survival_Years" from the training dataset. 
+
+* The tree has perfect classification (Gini = 0.0 at leaf nodes), meaning the model has memorized the dataset rather than learning general patterns.
+* Issue: This will not generalize well to unseen data.
+* Data Leakage Detected
+* Top Decision Node: Mortality_Rate
+* Mortality_Rate should NOT be a predictor for diagnosis because it is determined AFTER diagnosis.
+* Fix: Remove "Mortality_Rate" from features.
+* Second Decision Node: Adenocarcinoma_Type
 
 ![DecisionTree1](images/Decision-Tree1.png)
 
+* Exploring Decision Tree Model improved by removing "Adenocarcinoma_Type" , "Cancer_Stage" ,"Survival_Years" from the training dataset. 
 * The accuracy score of the improved Decision Tree Model = 0.9744147574047636
 
 ![DecisionTree2](images/Decision-Tree2.png)
@@ -187,7 +195,7 @@ Finding the Optimal Number of Clusters (K) The "elbow" point is where the rate o
 Explanation of K-Means Clustering Visualization:
 This scatter plot represents K-Means Clustering based on Years of Smoking (X-axis) and Cigarettes per Day (Y-axis). The different colors represent different clusters.
 
-**What the Clusters Represent**
+**What the K-Means Clusters Represent**
 * Cluster 0 (Dark Purple): Light smokers or new smokers (few years of smoking, fewer cigarettes per day). Includes individuals with low smoking exposure.
 * Cluster 1 (Teal/Blue-Green): Moderate smokers (mid-range years of smoking, medium cigarette consumption). Likely individuals with some smoking-related risks but not extreme.
 * Cluster 2 (Yellow): Heavy smokers (long history of smoking, high daily cigarette consumption). Likely high-risk individuals for lung cancer and smoking-related diseases.
