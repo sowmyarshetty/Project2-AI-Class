@@ -146,7 +146,7 @@ The Logistic Regression model has achieved 98% accuracy on the test dataset in t
 #### Data Model Optimization - Cross Validation
 A corrective measure for overfitting is data Cross Validation. Cross validation by splitting training data set into 5 folds
 
-![cross-validation](images/cross-validation.png)
+![cross-validation](images/cross-validation2.png)
 
 * The accuracy for each fold of training dataset is approximately the same and not much deviation from the training accuracy.
 * Test accuracy (X_test) is calculated separately . This ensures a fair evaluation of the final model on unseen data.
