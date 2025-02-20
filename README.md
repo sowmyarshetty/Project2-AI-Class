@@ -135,8 +135,24 @@ The Logistic Regression model has achieved 98% accuracy on the test dataset in t
 * Class 0 (No Lung Cancer) is Predicted Almost Perfectly Precision = 0.98 and Recall = 1.00, meaning nearly all non-cancer cases are correctly classified.
 * Macro F1 Score is 0.86, Weighted F1 Score is 0.98 The weighted F1 score is higher due to the dominance of Class 0. Macro F1 score is lower, indicating that the model performs better on Class 0 than Class 1.
 
+**Third Run** - Introduced max_iter = 1000 This is the maximum number of iterations for the optimization algorithm . Increasing this can help if the model does not converge with fewer iterations.
+
+![Logic-Regression3](images/Logic-Regression3.png)
+
+**Fourth Run** - Introduced penalty
+
+![Logic-Regression4](images/Logic-Regression4.png)
+
 #### Data Model Optimization - Cross Validation
-A corrective measure for overfitting is data Cross Validation. The accuracy for each fold is approximately the same and this shows that the model is not overfitting
+A corrective measure for overfitting is data Cross Validation. Cross validation by splitting training data set into 5 folds
+
+![cross-validation](images/cross-validation.png)
+
+* The accuracy for each fold of training dataset is approximately the same and not much deviation from the training accuracy.
+* Test accuracy (X_test) is calculated separately . This ensures a fair evaluation of the final model on unseen data.
+* Used stratify=y Prevents class imbalance in train/test sets
+
+Since we ave an imbalanced dataset (e.g., 96% class 0, 4% class 1), a random split without stratification might result in a test set with too few samples of the minority class. stratify=y ensures both train and test sets have the same class distribution as the original dataset.
 
 ![Cross-Validation](images/Cross-Validation.png)
 
